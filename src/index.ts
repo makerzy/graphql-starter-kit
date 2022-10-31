@@ -63,4 +63,6 @@ const main = async () => {
   }
 };
 
-main();
+main().then(()=> console.log("Success!!")).catch(()=>{
+  console.log("Unhandled Exception(s)!!!")
+})
